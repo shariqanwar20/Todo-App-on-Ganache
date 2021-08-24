@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import { TODO_LIST_ADDRESS, TODO_LIST_ABI } from "./config";
+import { TODO_LIST_ADDRESS } from "./config";
+import TODO_LIST_ABI from './abi/todoList.json'
 import "./App.css";
 import Web3 from "web3";
 import { Button, Form } from "react-bootstrap";
@@ -71,7 +72,7 @@ function App() {
 
         /* initialize our contract with contract address(copy this from ganache) and contract's ABI */
         const todoList = new web3.eth.Contract(
-          TODO_LIST_ABI,
+          TODO_LIST_ABI as any,
           TODO_LIST_ADDRESS
         );
         setTodoListContract(todoList);

@@ -23,7 +23,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "generate-types": "typechain --target=web3-v1 'abi/*.json'",
+    "postinstall": "yarn generate-types"
   },
   "eslintConfig": {
     "extends": [

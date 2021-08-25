@@ -11,6 +11,7 @@ If your server port on Ganache is 7545, change it to 8545 as this is the local h
 ![mainScreen](img/mainGanacheScreen.png)
 
 Go to Settings > Server, repace 7545 with 8545.
+![settins](img/settings.png)
 ![server](img/ServerMenu.png)
 
 ## Step 4

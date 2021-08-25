@@ -23,7 +23,6 @@ function App() {
       .send({ from: account })
       .once("receipt", (receipt: any) => {
         console.log("receipt :", receipt);
-
         getTasks().then(() => {
           setLoading(false);
         });
